@@ -6,23 +6,23 @@
 
 通过浏览器的开发者工具或代理抓包软件观察在输入框输入“name ”后点击 “Go” 按钮发出的POST请求与收到的响应。
 
-![1.1](General\HTTP Basics\1.1.png)
+![1.1](/General/HTTP%20Basics/1.1.png)
 
-![1](\General\HTTP Basics\1.png)
+![1](/General/HTTP%20Basics/1.png)
 
-![2-请求](General\HTTP Basics\2-请求.png)
+![2-请求](/General/HTTP%20Basics/2-请求.png)
 
-![3-响应](General\HTTP Basics\3-响应.png)
+![3-响应](/General/HTTP%20Basics/3-响应.png)
 
 ### 3. The Quiz
 
 通过上一步知道使用了 POST，而从之前的请求和响应中无法找到 magic number 相关信息，我们直接点 Go。
 
-![4](General\HTTP Basics\4.png)
+![4](/General/HTTP%20Basics/4.png)
 
-![1.2](General\HTTP Basics\1.2.png)
+![1.2](/General/HTTP%20Basics/1.2.png)
 
-![5-请求](General\HTTP Basics\5-请求.png)
+![5-请求](/General/HTTP%20Basics/5-请求.png)
 
 观察到请求中的 Body 部分存在 magic_num ，填入即通关
 
@@ -32,13 +32,13 @@
 
 按要求先点击 Submit 按钮，查看拦截到的 POST 请求
 
-![1](General\HTTP Proxies\1.png)
+![1](General/HTTP%20Proxies/1.png)
 
 按要求对其进行修改，将 POST 改为 GET，将 Body 中的参数删去，在URL后添加 Query string parameter， 为```?changeMe=Requests+are+tampered+easily```， 并在头部添加字段 ```X-Request-Intercepted: True```，发送后即可通关
 
-![2](General\HTTP Proxies\2.png)
+![2](General/HTTP%20Proxies/2.png)
 
-![3](General\HTTP Proxies\3.png)
+![3](General/HTTP%20Proxies/3.png)
 
 ## Developer Tools
 
@@ -226,7 +226,7 @@ sudo docker cp passwd <Container ID>:/etc/passwd
 
 ### 2. It is your turn!
 
-![1](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\1.png)
+![1]((A1) Injection\SQL Injection (intro)\1.png)
 
 根据页面所给的数据表，以及题目中的要求，可以写出下列语句
 
@@ -234,11 +234,11 @@ sudo docker cp passwd <Container ID>:/etc/passwd
 SELECT department FROM employees WHERE first_name='Bob' AND last_name='Franco';
 ```
 
-![2](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\2.png)
+![2]((A1) Injection\SQL Injection (intro)\2.png)
 
 ### 3. It is your turn!
 
-![3](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\3.png)
+![3]((A1) Injection\SQL Injection (intro)\3.png)
 
 根据题目要求，写出下列语句
 
@@ -246,11 +246,11 @@ SELECT department FROM employees WHERE first_name='Bob' AND last_name='Franco';
 UPDATE employees SET department='Sales' WHERE first_name='Tobi' AND last_name='Barnett';
 ```
 
-![4](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\4.png)
+![4]((A1) Injection\SQL Injection (intro)\4.png)
 
 ### 4. Data Definition Language (DDL)
 
-![5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\5.png)
+![5]((A1) Injection\SQL Injection (intro)\5.png)
 
 根据题目要求，写出下列语句
 
@@ -258,11 +258,11 @@ UPDATE employees SET department='Sales' WHERE first_name='Tobi' AND last_name='B
 ALTER TABLE employees ADD phone varchar(20)
 ```
 
-![6](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\6.png)
+![6]((A1) Injection\SQL Injection (intro)\6.png)
 
 ### 5. Data Control Language (DCL)
 
-![7](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\7.png)
+![7]((A1) Injection\SQL Injection (intro)\7.png)
 
 根据题目要求，写出下列语句
 
@@ -270,19 +270,19 @@ ALTER TABLE employees ADD phone varchar(20)
 GRANT ALTER TABLE TO UnauthorizedUser
 ```
 
-![8](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\8.png)
+![8]((A1) Injection\SQL Injection (intro)\8.png)
 
 ### 9. Try It! String SQL injection
 
-![9](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\9.png)
+![9]((A1) Injection\SQL Injection (intro)\9.png)
 
 根据上文讲解，选择第一项为```Smith'```，第二项为```or```，第三项为```'1' = '1```，即可完成注入
 
-![10](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\10.png)
+![10]((A1) Injection\SQL Injection (intro)\10.png)
 
 ### 10. Try It! Numeric SQL injection
 
-![11](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\11.png)
+![11]((A1) Injection\SQL Injection (intro)\11.png)
 
 本题需要注意一点，关于 NOT, OR 和 AND 的优先级关系，如下
 
@@ -304,27 +304,27 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 优先运算```Login_Count = 1 AND userid= 1```得到 FALSE，计算```1 = 1```得到 TRUE，后计算```FALSE OR TRUE```得到 TRUE，因此注入成功
 
-![12](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\12.png)
+![12]((A1) Injection\SQL Injection (intro)\12.png)
 
 ### 11. It is your turn!
 
-![13](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\13.png)
+![13]((A1) Injection\SQL Injection (intro)\13.png)
 
 如图在第一空填入任意值，第二空填入 ```任意值 + ' OR '1' = '1```即可成功注入
 
-![14](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\14.png)
+![14]((A1) Injection\SQL Injection (intro)\14.png)
 
 ### 12. It is your turn!
 
-![15](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\15.png)
+![15]((A1) Injection\SQL Injection (intro)\15.png)
 
 根据题目要求中所描述的，我们需要将 John 的工资调整为员工中最高的，通过查看之前的表格，可以看到，将 工资Salary 设置为 90000 就可以使 John 的工资位列所有雇员之首，因此我们在第一空填写任意内容，第二空填写```'; UPDATE employees SET SALARY=90000 WHERE first_name='John```即可完成注入
 
-![16](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\16.png)
+![16]((A1) Injection\SQL Injection (intro)\16.png)
 
 ### 13. It is your turn!
 
-![17](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\17.png)
+![17]((A1) Injection\SQL Injection (intro)\17.png)
 
 首先，猜测本题中所给输入框跟前面几道题一样，会被填写回 SQL 语句中 SELECT 的 WHERE 部分，选择不同的输入内容进行尝试，观察其返回内容，可以印证猜测
 
@@ -334,7 +334,7 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 '; DROP TABLE access_log; --
 ```
 
-![18](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (intro)\18.png)
+![18]((A1) Injection\SQL Injection (intro)\18.png)
 
 
 
@@ -352,7 +352,7 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 结果如图：
 
-![1](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\1.png)
+![1]((A1) Injection\SQL Injection (advanced)\1.png)
 
 需要注意两点：
 
@@ -367,7 +367,7 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 结果如图：
 
-![2](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\2.png)
+![2]((A1) Injection\SQL Injection (advanced)\2.png)
 
 将所得密码填入其中，即可过关
 
@@ -377,33 +377,33 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 首先测试登陆界面，用户名输入```' or '1'='1```，密码任意，点击登录，提示不匹配，推测此处可能不存在注入点，暂时跳过。
 
-![3](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\3.png)
+![3]((A1) Injection\SQL Injection (advanced)\3.png)
 
 接下来测试注册页面，尝试以用户名"tom"进行注册，提示该用户已注册，符合预期。
 
-![4](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\4.png)
+![4]((A1) Injection\SQL Injection (advanced)\4.png)
 
 接着在用户名处输入```tom' or '1'='1```和```tom' or '1'='2```，均返回如下提示
 
-![5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\5.png)
+![5]((A1) Injection\SQL Injection (advanced)\5.png)
 
 再在用户名处输入```abc' or '1'='2```，返回如下提示
 
-![6](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\6.png)
+![6]((A1) Injection\SQL Injection (advanced)\6.png)
 
 再在用户名处输入```tom' or '1'='2```，返回如下提示
 
-![6.5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\6.5.png)
+![6.5]((A1) Injection\SQL Injection (advanced)\6.5.png)
 
 综上，推测此处存在注入点
 
 接下来寻找存储密码的表头，观察注册时发送的PUT请求，猜测密码表头可能为“password”
 
-![7](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\7.png)
+![7]((A1) Injection\SQL Injection (advanced)\7.png)
 
 构造Payload：```tom' AND length(password)>0 --```，如果字段存在，则 length(password) 的值为 tom 的 password 的长度，实际得到如下返回：
 
-![5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\5.png)
+![5]((A1) Injection\SQL Injection (advanced)\5.png)
 
 说明猜测正确，存储密码的表头名为 password
 
@@ -411,21 +411,21 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 构造如下 Payload ：```tom' AND substr(password,1,1)='t```，使用 ZAP 拦截 PUT 请求，在数据包内容界面单击鼠标右键选择“Fuzz”进入暴破模式
 
-![8](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\8.png)
+![8]((A1) Injection\SQL Injection (advanced)\8.png)
 
 删除右侧已有的暴破位置，选中左侧 Body 部分中的字母 “t”，点击右边的 “Add” 按键将其作为暴破变量，在弹出的窗口中点击 “Add” ，类型选择为 “File Fuzzers” ，具体选择其下的 “jbrofuzz -> Alphabets -> ASCII 85 Alphabet” ，点击右下角添加，再点击确定，完成暴破位置创建，可以看到，创建好的暴破位置已被对应着色。
 
-![9](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\9.png)
+![9]((A1) Injection\SQL Injection (advanced)\9.png)
 
-![10](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\10.png)
+![10]((A1) Injection\SQL Injection (advanced)\10.png)
 
 点击 “选项” ，将 “Delay” 一栏设为 200ms ，避免请求过快出现异常。
 
-![11](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\11.png)
+![11]((A1) Injection\SQL Injection (advanced)\11.png)
 
 点击右下角 “Start Fuzzer” 开始暴破，暴破结束后，点击表头中的 “Size Resp. Body” 使其按照返回数据包的 Body 长度进行升序排列，可以看到其中 Payload 为字符 “t” 的表项 Body 大小明显与其他不同，因此 password 的第一个字符为 “t”
 
-![12](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (advanced)\12.png)
+![12]((A1) Injection\SQL Injection (advanced)\12.png)
 
 同理，依次改变数据包中 substr(password,2,1) 函数参数，分别进行暴破，即可得到完整密码。
 
@@ -439,7 +439,7 @@ SELECT * From user_data WHERE Login_Count = 1 AND userid= 1 OR 1 = 1
 
 如图所示填入即可通过
 
-![1](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\1.png)
+![1]((A1) Injection\SQL Injection (mitigation)\1.png)
 
 ### 6. Try it! Writing safe code
 
@@ -458,7 +458,7 @@ try {
 }
 ```
 
-![2](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\2.png)
+![2]((A1) Injection\SQL Injection (mitigation)\2.png)
 
 ### 9. Input validation alone is not enough!!
 
@@ -466,53 +466,53 @@ try {
 
 首先尝试原 Payload ：```';SELECT * FROM user_system_data;--```，返回如下错误信息，判断系统加入了空格过滤
 
-![3](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\3.png)
+![3]((A1) Injection\SQL Injection (mitigation)\3.png)
 
 因此考虑对应的绕过手段，这里我选择使用注释符/**/代替空格尝试绕过
 
 将上述 Payload 改为```';SELECT/**/*/**/FROM/**/user_system_data;--```，即可成功绕过完成注入
 
-![4](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\4.png)
+![4]((A1) Injection\SQL Injection (mitigation)\4.png)
 
 ### 10. Input validation alone is not enough!!
 
 首先尝试将上一题的 Payload 带入测试，得到如下错误回显
 
-![5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\5.png)
+![5]((A1) Injection\SQL Injection (mitigation)\5.png)
 
 可以观察到，在实际执行的语句中，关键词SELECT和FROM均被移除，判断其进行了关键字过滤，我们可以使用针对手段对其绕过，这里选择使用双关键字法
 
 构造 Payload：```';SELselectECT/**/*/**/FRfromOM/**/user_system_data;--```，即可成功绕过完成注入
 
-![6](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\6.png)
+![6]((A1) Injection\SQL Injection (mitigation)\6.png)
 
 ### 12.
 
 题目中提示本题需要根据排序部分（ORDER BY）进行注入，因此，我们尝试点击不同字段的排序按钮，使用抓包工具监测数据包，这里以 ZAP 为例
 
-![7](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\7.png)
+![7]((A1) Injection\SQL Injection (mitigation)\7.png)
 
 可以看到，发出的请求带有 Payload：```column=ip```，因此，我们尝试构造新的 Payload：```column=(CASE WHEN (TRUE) THEN ip ELSE hostname END)```，测试注入可行性（注意，前页教学中所给语法有误，完整准确的 CASE 结构为：CASE WHEN THEN ELSE END）
 
-![8](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\8.png)
+![8]((A1) Injection\SQL Injection (mitigation)\8.png)
 
 发送后得到如下响应，观察到返回的表项是根据 ip 顺序进行排序的，因此做出判断，此处确实存在注入点
 
-![9](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\9.png)
+![9]((A1) Injection\SQL Injection (mitigation)\9.png)
 
 在进行最后的注入之前，我们还需要确定表名，这里我们直接选取一个错误的 Payload ，观察其返回的报错信息即可得知表名为 “servers”
 
-![10](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\10.png)
+![10]((A1) Injection\SQL Injection (mitigation)\10.png)
 
-![11](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\11.png)
+![11]((A1) Injection\SQL Injection (mitigation)\11.png)
 
 之后构造 Payload：```column=(CASE WHEN (SELECT substr(ip,1,1)='1' FROM servers WHERE hostname='webgoat-prd') THEN ip ELSE hostname END)```，对 ip 地址的前三个位置分别使用数字字典进行暴破
 
-![12](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\12.png)
+![12]((A1) Injection\SQL Injection (mitigation)\12.png)
 
 结果如图所示，找到三个位置的所有响应中唯一以 IP 顺序排列表项的那个数据包，对应的数字即为暴破结果
 
-![13](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\SQL Injection (mitigation)\13.png)
+![13]((A1) Injection\SQL Injection (mitigation)\13.png)
 
 因此，webgoat-prd 对应的 IP 为 “104.130.219.202”
 
@@ -524,29 +524,29 @@ try {
 
 首先点击头像，随意选择一个文件后，下面参数默认，提交，查看结果
 
-![1](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\1.png)
+![1]((A1) Injection\Path traversal\1.png)
 
 发现所上传的文件被存放在了个人用户目录下的“test”文件夹中
 
 将“Full Name”字段改为“abc”，再次尝试上传
 
-![2](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\2.png)
+![2]((A1) Injection\Path traversal\2.png)
 
 发现上传的文件被存放在了个人用户目录下的“abc”文件夹中，据此推断，文件存放路径与“Full Name”字段直接相关
 
 将 Payload 改为```../test```，再次上传，即可通关
 
-![3](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\3.png)
+![3]((A1) Injection\Path traversal\3.png)
 
 ### 3. Path traversal while uploading files
 
 首先尝试上题 Payload：```../test```
 
-![4](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\4.png)
+![4]((A1) Injection\Path traversal\4.png)
 
 发现文件未被上传至指定位置，结合题目描述可以得出，本题会将发现的“../”删去，因此考虑构造双关键字，输入新的 Payload：```....//test```，即可通关
 
-![5](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\5.png)
+![5]((A1) Injection\Path traversal\5.png)
 
 ### 4. Path traversal while uploading files
 
@@ -554,45 +554,45 @@ try {
 
 观察默认参数的提交结果，文件被直接存放在了用户目录下，与 Full Name 彻底无关
 
-![6](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\6.png)
+![6]((A1) Injection\Path traversal\6.png)
 
 但由此，我们可以猜想其路径是否与文件名直接相关，由于文件名中直接输入“../”会提示非法字符，因此我们通过抓包，将文件名称前手动添加```../```，重新发送，即可通关
 
-![7](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\7.png)
+![7]((A1) Injection\Path traversal\7.png)
 
 ### 5. Retrieving other files with a path traversal
 
 点击按钮可以随即展示一张图片，进行抓包后发现，在其响应中，显示出了```?id=7.jpg```这一参数
 
-![8](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\8.png)
+![8]((A1) Injection\Path traversal\8.png)
 
-![9](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\9.png)
+![9]((A1) Injection\Path traversal\9.png)
 
 我们尝试重发请求，在GET请求尾部添加```?id=7.jpg```，观察其响应，发现响应 404，查看路径字段，发现其中中多出一个“.jpg”，判断出 id 字段的参数无需添加 ".jpg"
 
-![10](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\10.png)
+![10]((A1) Injection\Path traversal\10.png)
 
 删去请求中的“.jpg”，再次发送，可以看到正常响应，说明我们可以通过 id 字段控制随机脚本
 
-![11](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\11.png)
+![11]((A1) Injection\Path traversal\11.png)
 
 我们现在尝试直接将题中要求找到的图片名作为参数填入 id 字段，提示请求错误，说明图片不存在
 
-![12](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\12.png)
+![12]((A1) Injection\Path traversal\12.png)
 
 由于本题考查路径遍历，我们尝试去上层目录查询，在图片名前添加“../”组成新的 Payload：```../path-traversal-secret```，发送请求后查看其响应，发现其提示参数中存在非法字符
 
-![13](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\13.png)
+![13]((A1) Injection\Path traversal\13.png)
 
 考虑将“../”转换为“%2e%2e%2f”，再次发送请求，错误提示消失，但图片仍不存在
 
-![14](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\14.png)
+![14]((A1) Injection\Path traversal\14.png)
 
 继续向上级目录查找，提交请求后发现成功获得响应
 
-![15](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\15.png)
+![15]((A1) Injection\Path traversal\15.png)
 
 根据相应内容，我们可以看到，本题的最终答案，就是将登录用的 username 进行 SHA-512 取哈希，计算后填入答案框中即可通关
 
-![16](E:\CollegeLearning\网络对抗\实验1\WebGoat通关攻略 By. LSJ\(A1) Injection\Path traversal\16.png)
+![16]((A1) Injection\Path traversal\16.png)
 
